@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7c7c">
+
+
+    <EditText
+        android:hint="Email"
+        android:layout_marginTop="5dp"
+        android:id="@+id/email_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:maxLines="1"
+        android:hint="Password"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pass_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Log In" />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:onClick="sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Do,nt have account?Sign up" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    >
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:hint="Enter Num"
+        android:id="@+id/phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+
+    <Button
+        android:onClick="send_sms"
+        android:layout_marginTop="15dp"
+        android:id="@+id/send_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send OTP" />
+
+    <EditText
+        android:hint="Enter OTP"
+        android:layout_marginTop="50dp"
+        android:id="@+id/otp_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:onClick="verify"
+        android:layout_marginTop="15dp"
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify_OTP" />
+
+    <Button
+        android:id="@+id/emailauth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:onClick="email"
+        android:text="Verify_email" />
+
+</LinearLayout>
